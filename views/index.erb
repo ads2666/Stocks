@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Sinatra ERB Chartkick Test</title>
+    <script src="//www.google.com/jsapi"></script>
+    <script src="chartkick.js"></script>
+  </head>
+  <body>
+    <center>
+      <h1>
+        <%=Time.now.inspect%>
+      </h1>
+      <p>
+      <%= pie_chart({"Football" => 10, "Basketball" => 5, "Hockey" => 2}) %>
+      </p>
+    </center>
+  </body>
+</html>
