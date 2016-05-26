@@ -25,11 +25,8 @@ post '/' do
     individ_data = line.split(',')
    @stock_prices[individ_data[0]] = individ_data[-1].to_f.round(2)
   end
-  "the post worked: #{params[:message]}"
-  "Here is the info: #{@stock_prices}"
   erb :highcharts
 end
-
 
 get '/test' do
   erb :index
