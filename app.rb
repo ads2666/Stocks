@@ -5,6 +5,8 @@ require 'json'
 require 'byebug'
 require 'date'
 require 'chartkick'
+require 'sinatra/activerecord'
+require './config/environments'
 
 get '/' do
   erb :form
